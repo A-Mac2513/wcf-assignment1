@@ -52,11 +52,5 @@ namespace Five_Methods
         /// <returns> The input array in an ascending or descending order </returns>
         [OperationContract]
         string SortNumbers(int[] numbers, string sortType);
-
-
-
-    }
-
-
-    
+    }    
 }
