@@ -48,7 +48,21 @@ namespace Five_Methods
 
         public int SumDigits(string userNum)
         {
-            throw new NotImplementedException();
+            int[] digits = new int[userNum.Length];
+            int i = 0;
+            int answer = 0;
+
+            foreach (char digit in userNum)
+            {
+                digits[i] = (int)digit;
+            }
+
+            foreach (int digit in digits)
+            {
+                answer += digit;
+            }
+
+            return answer;
         }
     }
 }
