@@ -63,7 +63,7 @@ namespace Five_Methods
                         Array.Sort(numbers);
                         foreach (int i in numbers)
                         {
-                            output.Append($"\n{i}");
+                            output.Append($"\n \t{i}");
                         }
                         break;
                     }
@@ -77,7 +77,7 @@ namespace Five_Methods
 
                         foreach (int i in numbers)
                         {
-                            output.Append($"\n{i}");
+                            output.Append($"\n \t{i}");
                         }
                         break;
                     }
