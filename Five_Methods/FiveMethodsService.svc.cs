@@ -16,27 +16,24 @@ namespace Five_Methods
             return $"<{tag}>{text}</{tag}>";
         }
 
-        public string PrimeNumber(int userNum)
+        public bool PrimeNumber(int userNum)
         {
-            int x = 1; // each number between 0 and the number the user input
-            int factors = 0;  // the amount of numbers that divide into the the user input number
-            do
+            if (userNum %2 == 0)
             {
-                if (userNum % x == 0)
-                {
-                    factors++;
-                }
-
-                x++;
-
-            } while (x <= userNum); 
-
-            if (factors == 2)
-            {
-                return $"{userNum} IS a prime number!";
+                return false;
             }
 
-            return $"{userNum} IS NOT a prime number!";
+            int max = (int)Math.Floor(Math.Sqrt(userNum));
+
+            for (int i = 3; i <= max; i += 2)
+            {
+                if (userNum %i == 0)
+                {
+                    return false;
+                }
+            }
+
+            return true;
         }
 
         public string ReverseString(string userInput)

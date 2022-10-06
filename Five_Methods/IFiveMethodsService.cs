@@ -17,7 +17,7 @@ namespace Five_Methods
         /// <param name="userNum"></param>
         /// <returns> A string that states if the number is a prime number or not </returns>
         [OperationContract]
-        string PrimeNumber (int userNum);
+        bool PrimeNumber (int userNum);
 
         /// <summary>
         /// Take the individual digits of the number the user input and adds them together.
