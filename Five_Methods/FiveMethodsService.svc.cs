@@ -41,9 +41,14 @@ namespace Five_Methods
 
         public string ReverseString(string userInput)
         {
-            return $"{userInput.Reverse()}";
-
-            //return (string)userInput.Reverse();
+            char[] chars = userInput.ToCharArray();
+            Array.Reverse(chars);
+            string output = "";
+            foreach (char ch in chars)
+            {
+                output += ch;
+            }
+            return output;
         }
 
         public string SortNumbers(int[] numbers, string sortType)
