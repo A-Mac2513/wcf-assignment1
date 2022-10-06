@@ -38,7 +38,9 @@ namespace Five_Methods
 
         public string ReverseString(string userInput)
         {
-            throw new NotImplementedException();
+            return $"{userInput.Reverse()}";
+
+            //return (string)userInput.Reverse();
         }
 
         public string SortNumbers(int[] numbers, string sortType)
