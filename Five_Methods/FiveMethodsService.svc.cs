@@ -18,7 +18,7 @@ namespace Five_Methods
 
         public string PrimeNumber(int userNum)
         {
-            int x = 0; // each number between 0 and the number the user input
+            int x = 1; // each number between 0 and the number the user input
             int factors = 0;  // the amount of numbers that divide into the the user input number
             do
             {
@@ -27,7 +27,9 @@ namespace Five_Methods
                     factors++;
                 }
 
-            } while (x < userNum); ;
+                x++;
+
+            } while (x <= userNum); 
 
             if (factors == 2)
             {
@@ -89,7 +91,9 @@ namespace Five_Methods
 
             foreach (char digit in userNum)
             {
-                digits[i] = (int)digit;
+                string x = digit.ToString();
+                digits[i] = int.Parse(x);
+                i++;
             }
 
             foreach (int digit in digits)

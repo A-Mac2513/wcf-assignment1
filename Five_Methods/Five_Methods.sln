@@ -5,6 +5,11 @@ VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Five_Methods", "Five_Methods.csproj", "{5A82667D-9ED8-43F3-801F-4EC506E1D2FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Five_Methods_Client", "..\Five_Methods_Client\Five_Methods_Client.csproj", "{F60CF0BC-DD82-4D63-BAF5-D069D8BAB172}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5A82667D-9ED8-43F3-801F-4EC506E1D2FD} = {5A82667D-9ED8-43F3-801F-4EC506E1D2FD}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +20,10 @@ Global
 		{5A82667D-9ED8-43F3-801F-4EC506E1D2FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A82667D-9ED8-43F3-801F-4EC506E1D2FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A82667D-9ED8-43F3-801F-4EC506E1D2FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F60CF0BC-DD82-4D63-BAF5-D069D8BAB172}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F60CF0BC-DD82-4D63-BAF5-D069D8BAB172}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F60CF0BC-DD82-4D63-BAF5-D069D8BAB172}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F60CF0BC-DD82-4D63-BAF5-D069D8BAB172}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
