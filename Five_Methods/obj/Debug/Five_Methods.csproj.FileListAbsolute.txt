@@ -1,0 +1,7 @@
+C:\Users\Andrew\Documents\CPA\Fall_2022\PROG3170\Assignments\Assignment_01\wcf-assignment1\Five_Methods\bin\Five_Methods.dll.config
+C:\Users\Andrew\Documents\CPA\Fall_2022\PROG3170\Assignments\Assignment_01\wcf-assignment1\Five_Methods\bin\Five_Methods.dll
+C:\Users\Andrew\Documents\CPA\Fall_2022\PROG3170\Assignments\Assignment_01\wcf-assignment1\Five_Methods\bin\Five_Methods.pdb
+C:\Users\Andrew\Documents\CPA\Fall_2022\PROG3170\Assignments\Assignment_01\wcf-assignment1\Five_Methods\obj\Debug\Five_Methods.csproj.AssemblyReference.cache
+C:\Users\Andrew\Documents\CPA\Fall_2022\PROG3170\Assignments\Assignment_01\wcf-assignment1\Five_Methods\obj\Debug\Five_Methods.csproj.CoreCompileInputs.cache
+C:\Users\Andrew\Documents\CPA\Fall_2022\PROG3170\Assignments\Assignment_01\wcf-assignment1\Five_Methods\obj\Debug\Five_Methods.dll
+C:\Users\Andrew\Documents\CPA\Fall_2022\PROG3170\Assignments\Assignment_01\wcf-assignment1\Five_Methods\obj\Debug\Five_Methods.pdb

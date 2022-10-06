@@ -12,7 +12,7 @@ namespace Five_Methods
     {
         public string HtmlTags(string tag, string text)
         {
-            throw new NotImplementedException();
+            return $"<{tag}>{text}</{tag}>";
         }
 
         public string PrimeNumber(int userNum)
