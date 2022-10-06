@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
@@ -21,7 +22,7 @@ namespace Five_Methods
             int factors = 0;  // the amount of numbers that divide into the the user input number
             do
             {
-                if ( userNum % x == 0 )
+                if (userNum % x == 0)
                 {
                     factors++;
                 }
@@ -45,7 +46,39 @@ namespace Five_Methods
 
         public string SortNumbers(int[] numbers, string sortType)
         {
-            throw new NotImplementedException();
+            StringBuilder output = new StringBuilder("Your numbers in order: ");
+
+            switch (sortType)
+            {
+                case "ASC":
+                    {
+                        output.Insert(15, " ascending ");
+                        Array.Sort(numbers);
+                        foreach (int i in numbers)
+                        {
+                            output.Append($"\n{i}");
+                        }
+                        break;
+                    }
+
+                case "DESC":
+                    {
+                        output.Insert(15, " descending ");
+
+                        Array.Sort(numbers);
+                        Array.Reverse(numbers);
+
+                        foreach (int i in numbers)
+                        {
+                            output.Append($"\n{i}");
+                        }
+                        break;
+                    }
+                default:
+                    break;
+            }
+            
+            return output.ToString();
         }
 
         public int SumDigits(string userNum)
